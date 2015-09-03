@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="C4M-Xc-M9d">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--First Example-->
+        <scene sceneID="Vh9-0I-MBf">
+            <objects>
+                <viewController id="C4M-Xc-M9d" customClass="FirstExampleViewController" customModule="SendDataToEmbeddedView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dXL-Vh-RlA"/>
+                        <viewControllerLayoutGuide type="bottom" id="NPB-H2-xcm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6xO-98-XaZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ub2-8J-c5y">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="rIV-J1-pRg" kind="embed" identifier="firstExampleSegue" id="gdh-yU-dKW"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVS-BW-lmo">
+                                <rect key="frame" x="143" y="61" width="314" height="30"/>
+                                <state key="normal" title="Click here to send data to embeded container">
+                                    <color key="titleColor" red="0.86274509799999999" green="0.1960784314" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateTextLabelsWithText" destination="C4M-Xc-M9d" eventType="touchUpInside" id="wFR-55-MPV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ub2-8J-c5y" firstAttribute="top" secondItem="eVS-BW-lmo" secondAttribute="bottom" constant="-91" id="9GP-0U-Oz9"/>
+                            <constraint firstItem="Ub2-8J-c5y" firstAttribute="top" secondItem="6xO-98-XaZ" secondAttribute="top" id="D2V-kd-Yk3"/>
+                            <constraint firstAttribute="bottom" secondItem="Ub2-8J-c5y" secondAttribute="bottom" id="O47-87-pKY"/>
+                            <constraint firstItem="Ub2-8J-c5y" firstAttribute="leading" secondItem="6xO-98-XaZ" secondAttribute="leading" id="P2t-dx-2nX"/>
+                            <constraint firstAttribute="centerX" secondItem="eVS-BW-lmo" secondAttribute="centerX" id="dGL-1a-yiA"/>
+                            <constraint firstAttribute="trailing" secondItem="Ub2-8J-c5y" secondAttribute="trailing" id="qL6-vk-7Be"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="First Example" id="QKN-hl-PfN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Na-8g-RWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="509" y="140"/>
+        </scene>
+        <!--First Example Embedded View-->
+        <scene sceneID="n0Q-WY-4HX">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="rIV-J1-pRg" customClass="FirstExampleEmbeddedView" customModule="SendDataToEmbeddedView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OjU-df-BrO"/>
+                        <viewControllerLayoutGuide type="bottom" id="o9m-3A-47s"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ejd-qN-NgI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbF-jg-QrC">
+                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.027277138118333211" green="0.80144293727940163" blue="1" alpha="0.39000000000000001" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="dbF-jg-QrC" secondAttribute="centerY" id="RPE-fl-Hun"/>
+                            <constraint firstAttribute="centerX" secondItem="dbF-jg-QrC" secondAttribute="centerX" id="WwP-dx-agY"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="Text" destination="dbF-jg-QrC" id="BkM-bi-saY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7D9-ns-Qec" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1210" y="140"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C00B67D4-9DA5-4A82-A164-210F1F0C6546</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SendDataToEmbeddedView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C72D92EE179FF723A63862151D080C7F9DEBE4BF</key>
+		<string>github.com:mobinzk/SendDataToEmbeddedView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Objective-C/SendDataToEmbeddedView.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C72D92EE179FF723A63862151D080C7F9DEBE4BF</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:mobinzk/SendDataToEmbeddedView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C72D92EE179FF723A63862151D080C7F9DEBE4BF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C72D92EE179FF723A63862151D080C7F9DEBE4BF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SendDataToEmbeddedView</string>
+		</dict>
+	</array>
+</dict>
+</plist>
